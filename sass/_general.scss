@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  color: $text;
+  line-height: 1;
+  background-color: white;
+  font-weight: 400;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  all: unset;
+  color: white;
+  border-radius: 5px;
+  background-color: $primary-color;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: calc(24 / 15);
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.heading {
+  color: $text-heading;
+  font-weight: 500;
+  font-family: $secondary-font;
+  &--biggest {
+    font-size: 72px;
+    line-height: calc(78 / 72);
+  }
+  &--bigger {
+    font-size: 64px;
+    line-height: calc(72 / 64);
+  }
+  &--big {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+  &--large {
+    font-size: 42px;
+    line-height: calc(50 / 42);
+  }
+  &--normal {
+    font-size: 36px;
+    line-height: calc(46 / 36);
+  }
+  &--medium {
+    font-size: 22px;
+    line-height: calc(32 / 22);
+  }
+  &--small {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+}
+.text {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  &--small {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
+  &--xsmall {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .heading {
+    &--biggest {
+      font-size: 50px;
+    }
+    &--bigger {
+      font-size: 46px;
+    }
+    &--big {
+      font-size: 40px;
+    }
+    &--large {
+      font-size: 36px;
+    }
+    &--normal {
+      font-size: 32px;
+    }
+  }
+  .text {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 13px;
+  }
+}
